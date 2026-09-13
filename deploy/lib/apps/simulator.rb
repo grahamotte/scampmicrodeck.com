@@ -58,7 +58,7 @@ module Apps
           "-derivedDataPath",
           derived_data_path,
           "build",
-          "PRODUCT_BUNDLE_IDENTIFIER=#{target.fetch(:bundleIdentifier)}",
+          "#{target.fetch(:bundleIdentifierBuildSetting, "PRODUCT_BUNDLE_IDENTIFIER")}=#{target.fetch(:bundleIdentifier)}",
         ]))
       end
 
