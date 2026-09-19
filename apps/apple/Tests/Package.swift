@@ -8,7 +8,17 @@ let package = Package(
         .target(
             name: "App",
             path: "App",
-            exclude: ["Assets.xcassets", "Config", "Resources", "UI"],
+            exclude: [
+                "AppLayout.swift",
+                "Assets.xcassets",
+                "Config",
+                "ContentView.swift",
+                "LibraryCommands.swift",
+                "Resources",
+                "ScampMicroDeckApp.swift",
+                "Shaders",
+                "UI",
+            ],
             sources: [
                 "Playback/AudioPlayerEngine.swift",
                 "Playback/AlbumLibrary.swift",
